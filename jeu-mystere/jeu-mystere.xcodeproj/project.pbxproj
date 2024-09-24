@@ -29,7 +29,7 @@
 /* Begin PBXFileReference section */
 		5A8C052D2C999B230006BF62 /* jeu-mystere-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jeu-mystere-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8C052F2C999B230006BF62 /* jeu_mystere_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jeu_mystere_appApp.swift; sourceTree = "<group>"; };
-		5A8C05312C999B230006BF62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A8C05312C999B230006BF62 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 8; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 6; usesTabs = 0; wrapsLines = 1; };
 		5A8C05332C999B240006BF62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A8C05362C999B240006BF62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A9F1C862C9077180045FD1C /* jeu-mystere */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "jeu-mystere"; sourceTree = BUILT_PRODUCTS_DIR; };
