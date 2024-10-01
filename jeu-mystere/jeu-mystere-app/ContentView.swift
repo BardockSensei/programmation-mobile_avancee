@@ -9,25 +9,25 @@ import SwiftUI
 
 func finDePartie(nombreTentatives: Int, reponse: Int) -> String {
     if (nombreTentatives >= 17) {
-        return "Bravo, vous avez beaucoup de chance !";
+        return "Bravo, vous avez beaucoup de chance !"
     } else if (nombreTentatives >= 14) {
-        return "Bravo, très bonne stratégie avec un peu de chance...";
+        return "Bravo, très bonne stratégie avec un peu de chance..."
     } else if (nombreTentatives >= 9) {
-        return "Bravo, c'est bien !";
+        return "Bravo, c'est bien !"
     } else if (nombreTentatives > 0) {
-        return "Bien, mais vous pouvez mieux faire...";
+        return "Bien, mais vous pouvez mieux faire..."
     } else {
-        return "Perdu !\nCe n'est pas de chance, le nombre mystère était \(reponse)...";
+        return "Perdu !\nCe n'est pas de chance, le nombre mystère était \(reponse)..."
     }
 }
 
 struct ContentView: View {
     @State var nombreMystere :Int = Int.random(in: 1...100);
     
-    @State var nbJoue :String = "";
-    @State var indications :String = "";
-    @State var nbTentatives :Int = 10;
-    @State var propositions :[Int] = [];
+    @State var nbJoue :String = ""
+    @State var indications :String = ""
+    @State var nbTentatives :Int = 10
+    @State var propositions :[Int] = []
     
     var body: some View {
         VStack(spacing: 0) {
@@ -69,28 +69,28 @@ struct ContentView: View {
                     HStack(spacing: 25) {
                         Button("Jouer") {
                         //print("TRICHE : \(nombreMystere)");
-                        let proposition :Int = Int(nbJoue) ?? -1;
+                        let proposition :Int = Int(nbJoue) ?? -1
                         if (proposition != -1) {
                             if (propositions.contains(proposition)) {
-                                indications = "Vous avez déjà essayez ce nombre...";
+                                indications = "Vous avez déjà essayez ce nombre..."
                             } else {
-                                nbTentatives -= 1;
-                                propositions.append(proposition);
+                                nbTentatives -= 1
+                                propositions.append(proposition)
                                     
                                 if (proposition > nombreMystere) {
-                                    indications = "Votre proposition est trop grande";
+                                    indications = "Votre proposition est trop grande"
                                 } else if (proposition < nombreMystere) {
-                                    indications = "Votre proposition est trop petite";
+                                    indications = "Votre proposition est trop petite"
                                 } else {
-                                    indications = "Gagné !";
+                                    indications = "Gagné !"
                                 }
                                     
                                 if (nbTentatives == 0 || indications == "Gagné !") {
-                                    indications = finDePartie(nombreTentatives: nbTentatives, reponse: nombreMystere);
+                                    indications = finDePartie(nombreTentatives: nbTentatives, reponse: nombreMystere)
                                 }
                             }
                         } else {
-                            indications = "Votre proposition est incompréhensible...";
+                            indications = "Votre proposition est incompréhensible..."
                         }
                         }.foregroundColor(Color.white)
                 .disabled(nbTentatives == 0 || indications == "Gagné !")
@@ -100,11 +100,11 @@ struct ContentView: View {
                 .background((nbTentatives == 0 || indications == "Gagné !") ? Color.gray : Color.blue)
                 
                         Button("Nouvelle partie") {
-                            nombreMystere = Int.random(in: 1...100);
-                            nbJoue = "";
-                            indications = "";
-                            nbTentatives = 10;
-                            propositions.removeAll();
+                            nombreMystere = Int.random(in: 1...100)
+                            nbJoue = ""
+                            indications = ""
+                            nbTentatives = 10
+                            propositions.removeAll()
                         }.foregroundColor(Color.white)
                                     .padding()
                                     .fontWeight(.bold)
