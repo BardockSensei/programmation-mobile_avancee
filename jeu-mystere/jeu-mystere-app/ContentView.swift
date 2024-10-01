@@ -8,11 +8,11 @@
 import SwiftUI
 
 func finDePartie(nombreTentatives: Int, reponse: Int) -> String {
-    if (nombreTentatives >= 17) {
+    if (nombreTentatives >= 7) {
         return "Bravo, vous avez beaucoup de chance !"
-    } else if (nombreTentatives >= 14) {
+    } else if (nombreTentatives >= 5) {
         return "Bravo, très bonne stratégie avec un peu de chance..."
-    } else if (nombreTentatives >= 9) {
+    } else if (nombreTentatives >= 3) {
         return "Bravo, c'est bien !"
     } else if (nombreTentatives > 0) {
         return "Bien, mais vous pouvez mieux faire..."
@@ -28,6 +28,7 @@ struct ContentView: View {
     @State var indications :String = ""
     @State var nbTentatives :Int = 10
     @State var propositions :[Int] = []
+    @State var condVictoire :Bool = false
     
     var body: some View {
         VStack(spacing: 0) {
@@ -82,24 +83,25 @@ struct ContentView: View {
                                 } else if (proposition < nombreMystere) {
                                     indications = "Votre proposition est trop petite"
                                 } else {
-                                    indications = "Gagné !"
+                                    condVictoire = true
                                 }
                                     
-                                if (nbTentatives == 0 || indications == "Gagné !") {
+                                if (nbTentatives == 0 || condVictoire == true) {
                                     indications = finDePartie(nombreTentatives: nbTentatives, reponse: nombreMystere)
                                 }
                             }
                         } else {
                             indications = "Votre proposition est incompréhensible..."
                         }
-                        }.foregroundColor(Color.white)
-                .disabled(nbTentatives == 0 || indications == "Gagné !")
+                    }.foregroundColor(Color.white)
+                .disabled(nbTentatives == 0 || condVictoire == true)
                 .padding()
                 .fontWeight(.bold)
                 .frame(maxWidth: 250)
-                .background((nbTentatives == 0 || indications == "Gagné !") ? Color.gray : Color.blue)
+                .background((nbTentatives == 0 || condVictoire == true) ? Color.gray : Color.blue)
                 
                         Button("Nouvelle partie") {
+                            condVictoire = false
                             nombreMystere = Int.random(in: 1...100)
                             nbJoue = ""
                             indications = ""
@@ -109,8 +111,8 @@ struct ContentView: View {
                                     .padding()
                                     .fontWeight(.bold)
                                     .frame(maxWidth: 250).background(Color.blue)
-                    }.frame(maxWidth: 350)
-                            .padding()
+                    }.frame(maxWidth: 350).padding()
+                            
                     
                 Spacer()
                 

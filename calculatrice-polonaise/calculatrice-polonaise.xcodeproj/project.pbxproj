@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A06B4A72CAC2549000B2A27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06B4A62CAC2549000B2A27 /* AppDelegate.swift */; };
+		5A06B4A92CAC2549000B2A27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06B4A82CAC2549000B2A27 /* SceneDelegate.swift */; };
+		5A06B4AB2CAC2549000B2A27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06B4AA2CAC2549000B2A27 /* ViewController.swift */; };
+		5A06B4AE2CAC2549000B2A27 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5A06B4AD2CAC2549000B2A27 /* Base */; };
+		5A06B4B02CAC254A000B2A27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A06B4AF2CAC254A000B2A27 /* Assets.xcassets */; };
+		5A06B4B32CAC254A000B2A27 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5A06B4B22CAC254A000B2A27 /* Base */; };
+		5A06B4BE2CAC254B000B2A27 /* calculatrice_polonaiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06B4BD2CAC254B000B2A27 /* calculatrice_polonaiseTests.swift */; };
+		5A06B4C82CAC254B000B2A27 /* calculatrice_polonaiseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06B4C72CAC254B000B2A27 /* calculatrice_polonaiseUITests.swift */; };
+		5A06B4CA2CAC254B000B2A27 /* calculatrice_polonaiseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06B4C92CAC254B000B2A27 /* calculatrice_polonaiseUITestsLaunchTests.swift */; };
+		5A06B4D72CAC3326000B2A27 /* StackRPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06B4D62CAC3325000B2A27 /* StackRPN.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A06B4BA2CAC254B000B2A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A06B49B2CAC2549000B2A27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A06B4A22CAC2549000B2A27;
+			remoteInfo = "calculatrice-polonaise";
+		};
+		5A06B4C42CAC254B000B2A27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A06B49B2CAC2549000B2A27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A06B4A22CAC2549000B2A27;
+			remoteInfo = "calculatrice-polonaise";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A06B4A32CAC2549000B2A27 /* calculatrice-polonaise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calculatrice-polonaise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A06B4A62CAC2549000B2A27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A06B4A82CAC2549000B2A27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5A06B4AA2CAC2549000B2A27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A06B4AD2CAC2549000B2A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A06B4AF2CAC254A000B2A27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A06B4B22CAC254A000B2A27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A06B4B42CAC254A000B2A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A06B4B92CAC254B000B2A27 /* calculatrice-polonaiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "calculatrice-polonaiseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A06B4BD2CAC254B000B2A27 /* calculatrice_polonaiseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatrice_polonaiseTests.swift; sourceTree = "<group>"; };
+		5A06B4C32CAC254B000B2A27 /* calculatrice-polonaiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "calculatrice-polonaiseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A06B4C72CAC254B000B2A27 /* calculatrice_polonaiseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatrice_polonaiseUITests.swift; sourceTree = "<group>"; };
+		5A06B4C92CAC254B000B2A27 /* calculatrice_polonaiseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatrice_polonaiseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5A06B4D62CAC3325000B2A27 /* StackRPN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackRPN.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A06B4A02CAC2549000B2A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A06B4B62CAC254B000B2A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A06B4C02CAC254B000B2A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A06B49A2CAC2549000B2A27 = {
+			isa = PBXGroup;
+			children = (
+				5A06B4A52CAC2549000B2A27 /* calculatrice-polonaise */,
+				5A06B4BC2CAC254B000B2A27 /* calculatrice-polonaiseTests */,
+				5A06B4C62CAC254B000B2A27 /* calculatrice-polonaiseUITests */,
+				5A06B4A42CAC2549000B2A27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A06B4A42CAC2549000B2A27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A06B4A32CAC2549000B2A27 /* calculatrice-polonaise.app */,
+				5A06B4B92CAC254B000B2A27 /* calculatrice-polonaiseTests.xctest */,
+				5A06B4C32CAC254B000B2A27 /* calculatrice-polonaiseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A06B4A52CAC2549000B2A27 /* calculatrice-polonaise */ = {
+			isa = PBXGroup;
+			children = (
+				5A06B4A62CAC2549000B2A27 /* AppDelegate.swift */,
+				5A06B4A82CAC2549000B2A27 /* SceneDelegate.swift */,
+				5A06B4AA2CAC2549000B2A27 /* ViewController.swift */,
+				5A06B4D62CAC3325000B2A27 /* StackRPN.swift */,
+				5A06B4AC2CAC2549000B2A27 /* Main.storyboard */,
+				5A06B4AF2CAC254A000B2A27 /* Assets.xcassets */,
+				5A06B4B12CAC254A000B2A27 /* LaunchScreen.storyboard */,
+				5A06B4B42CAC254A000B2A27 /* Info.plist */,
+			);
+			path = "calculatrice-polonaise";
+			sourceTree = "<group>";
+		};
+		5A06B4BC2CAC254B000B2A27 /* calculatrice-polonaiseTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A06B4BD2CAC254B000B2A27 /* calculatrice_polonaiseTests.swift */,
+			);
+			path = "calculatrice-polonaiseTests";
+			sourceTree = "<group>";
+		};
+		5A06B4C62CAC254B000B2A27 /* calculatrice-polonaiseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A06B4C72CAC254B000B2A27 /* calculatrice_polonaiseUITests.swift */,
+				5A06B4C92CAC254B000B2A27 /* calculatrice_polonaiseUITestsLaunchTests.swift */,
+			);
+			path = "calculatrice-polonaiseUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A06B4A22CAC2549000B2A27 /* calculatrice-polonaise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A06B4CD2CAC254B000B2A27 /* Build configuration list for PBXNativeTarget "calculatrice-polonaise" */;
+			buildPhases = (
+				5A06B49F2CAC2549000B2A27 /* Sources */,
+				5A06B4A02CAC2549000B2A27 /* Frameworks */,
+				5A06B4A12CAC2549000B2A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "calculatrice-polonaise";
+			productName = "calculatrice-polonaise";
+			productReference = 5A06B4A32CAC2549000B2A27 /* calculatrice-polonaise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A06B4B82CAC254B000B2A27 /* calculatrice-polonaiseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A06B4D02CAC254B000B2A27 /* Build configuration list for PBXNativeTarget "calculatrice-polonaiseTests" */;
+			buildPhases = (
+				5A06B4B52CAC254B000B2A27 /* Sources */,
+				5A06B4B62CAC254B000B2A27 /* Frameworks */,
+				5A06B4B72CAC254B000B2A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A06B4BB2CAC254B000B2A27 /* PBXTargetDependency */,
+			);
+			name = "calculatrice-polonaiseTests";
+			productName = "calculatrice-polonaiseTests";
+			productReference = 5A06B4B92CAC254B000B2A27 /* calculatrice-polonaiseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A06B4C22CAC254B000B2A27 /* calculatrice-polonaiseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A06B4D32CAC254B000B2A27 /* Build configuration list for PBXNativeTarget "calculatrice-polonaiseUITests" */;
+			buildPhases = (
+				5A06B4BF2CAC254B000B2A27 /* Sources */,
+				5A06B4C02CAC254B000B2A27 /* Frameworks */,
+				5A06B4C12CAC254B000B2A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A06B4C52CAC254B000B2A27 /* PBXTargetDependency */,
+			);
+			name = "calculatrice-polonaiseUITests";
+			productName = "calculatrice-polonaiseUITests";
+			productReference = 5A06B4C32CAC254B000B2A27 /* calculatrice-polonaiseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A06B49B2CAC2549000B2A27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					5A06B4A22CAC2549000B2A27 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					5A06B4B82CAC254B000B2A27 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5A06B4A22CAC2549000B2A27;
+					};
+					5A06B4C22CAC254B000B2A27 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5A06B4A22CAC2549000B2A27;
+					};
+				};
+			};
+			buildConfigurationList = 5A06B49E2CAC2549000B2A27 /* Build configuration list for PBXProject "calculatrice-polonaise" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A06B49A2CAC2549000B2A27;
+			productRefGroup = 5A06B4A42CAC2549000B2A27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A06B4A22CAC2549000B2A27 /* calculatrice-polonaise */,
+				5A06B4B82CAC254B000B2A27 /* calculatrice-polonaiseTests */,
+				5A06B4C22CAC254B000B2A27 /* calculatrice-polonaiseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A06B4A12CAC2549000B2A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A06B4B02CAC254A000B2A27 /* Assets.xcassets in Resources */,
+				5A06B4B32CAC254A000B2A27 /* Base in Resources */,
+				5A06B4AE2CAC2549000B2A27 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A06B4B72CAC254B000B2A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A06B4C12CAC254B000B2A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A06B49F2CAC2549000B2A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A06B4AB2CAC2549000B2A27 /* ViewController.swift in Sources */,
+				5A06B4A72CAC2549000B2A27 /* AppDelegate.swift in Sources */,
+				5A06B4A92CAC2549000B2A27 /* SceneDelegate.swift in Sources */,
+				5A06B4D72CAC3326000B2A27 /* StackRPN.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A06B4B52CAC254B000B2A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A06B4BE2CAC254B000B2A27 /* calculatrice_polonaiseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A06B4BF2CAC254B000B2A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A06B4C82CAC254B000B2A27 /* calculatrice_polonaiseUITests.swift in Sources */,
+				5A06B4CA2CAC254B000B2A27 /* calculatrice_polonaiseUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A06B4BB2CAC254B000B2A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A06B4A22CAC2549000B2A27 /* calculatrice-polonaise */;
+			targetProxy = 5A06B4BA2CAC254B000B2A27 /* PBXContainerItemProxy */;
+		};
+		5A06B4C52CAC254B000B2A27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A06B4A22CAC2549000B2A27 /* calculatrice-polonaise */;
+			targetProxy = 5A06B4C42CAC254B000B2A27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A06B4AC2CAC2549000B2A27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A06B4AD2CAC2549000B2A27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A06B4B12CAC254A000B2A27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A06B4B22CAC254A000B2A27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A06B4CB2CAC254B000B2A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A06B4CC2CAC254B000B2A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A06B4CE2CAC254B000B2A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3FZAFPQ65P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "calculatrice-polonaise/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tp3.calculatrice-polonaise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A06B4CF2CAC254B000B2A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3FZAFPQ65P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "calculatrice-polonaise/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tp3.calculatrice-polonaise";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A06B4D12CAC254B000B2A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3FZAFPQ65P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tp3.calculatrice-polonaiseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calculatrice-polonaise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/calculatrice-polonaise";
+			};
+			name = Debug;
+		};
+		5A06B4D22CAC254B000B2A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3FZAFPQ65P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tp3.calculatrice-polonaiseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calculatrice-polonaise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/calculatrice-polonaise";
+			};
+			name = Release;
+		};
+		5A06B4D42CAC254B000B2A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3FZAFPQ65P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tp3.calculatrice-polonaiseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "calculatrice-polonaise";
+			};
+			name = Debug;
+		};
+		5A06B4D52CAC254B000B2A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3FZAFPQ65P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tp3.calculatrice-polonaiseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "calculatrice-polonaise";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A06B49E2CAC2549000B2A27 /* Build configuration list for PBXProject "calculatrice-polonaise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A06B4CB2CAC254B000B2A27 /* Debug */,
+				5A06B4CC2CAC254B000B2A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A06B4CD2CAC254B000B2A27 /* Build configuration list for PBXNativeTarget "calculatrice-polonaise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A06B4CE2CAC254B000B2A27 /* Debug */,
+				5A06B4CF2CAC254B000B2A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A06B4D02CAC254B000B2A27 /* Build configuration list for PBXNativeTarget "calculatrice-polonaiseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A06B4D12CAC254B000B2A27 /* Debug */,
+				5A06B4D22CAC254B000B2A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A06B4D32CAC254B000B2A27 /* Build configuration list for PBXNativeTarget "calculatrice-polonaiseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A06B4D42CAC254B000B2A27 /* Debug */,
+				5A06B4D52CAC254B000B2A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A06B49B2CAC2549000B2A27 /* Project object */;
+}
