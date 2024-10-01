@@ -13,7 +13,7 @@ func finDePartie(nombreTentatives: Int, reponse: Int) -> String {
     } else if (nombreTentatives >= 14) {
         return "Bravo, très bonne stratégie avec un peu de chance...";
     } else if (nombreTentatives >= 9) {
-        return "Bravo, c'est bien !"
+        return "Bravo, c'est bien !";
     } else if (nombreTentatives > 0) {
         return "Bien, mais vous pouvez mieux faire...";
     } else {
@@ -68,7 +68,7 @@ struct ContentView: View {
                 
                     HStack(spacing: 25) {
                         Button("Jouer") {
-                        print("TRICHE : \(nombreMystere)");
+                        //print("TRICHE : \(nombreMystere)");
                         let proposition :Int = Int(nbJoue) ?? -1;
                         if (proposition != -1) {
                             if (propositions.contains(proposition)) {
