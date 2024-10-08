@@ -15,9 +15,13 @@ class StackRPN {
     }
     
     func pop() -> NSNumber? {
-        let lastElement = self.myArray.last
-        self.myArray.removeLast()
-        return lastElement
+        if (!self.myArray.isEmpty) {
+            let lastElement :NSNumber? = self.myArray.last
+            self.myArray.removeLast()
+            return lastElement
+        } else {
+            return nil
+        }
     }
     
     
@@ -34,13 +38,18 @@ class StackRPN {
     }
     
     func toString() -> String! {
-        var result :String = "StackRPN: "
+        var result :String = "{StackRPN: "
         
         if (self.myArray.count != 0) {
+            result += "["
             for i in (0...self.myArray.count-1){
-                result.append("[i:\(i) - \(self.myArray[i])]")
+                result.append("(\(i) : \(self.myArray[i]))")
             }
+            result += "]"
+        } else {
+            result += "vide "
         }
+        result += "}"
         
         return result
     }
