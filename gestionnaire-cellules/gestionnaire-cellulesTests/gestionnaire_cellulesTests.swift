@@ -1,14 +1,14 @@
 //
-//  calculatrice_polonaiseTests.swift
-//  calculatrice-polonaiseTests
+//  gestionnaire_cellulesTests.swift
+//  gestionnaire-cellulesTests
 //
-//  Created by Guillaume Hostache on 01/10/2024.
+//  Created by Guillaume Hostache on 15/10/2024.
 //
 
 import XCTest
-@testable import calculatrice_polonaise
+@testable import gestionnaire_cellules
 
-final class calculatrice_polonaiseTests: XCTestCase {
+final class gestionnaire_cellulesTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -24,28 +24,6 @@ final class calculatrice_polonaiseTests: XCTestCase {
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-        let stackTest = StackRPN()
-        stackTest.push(aNumber: 62)
-        stackTest.push(aNumber: 45)
-        print(stackTest.toString() ?? "1")
-        stackTest.clear()
-        XCTAssert(stackTest.myArray.count == 0)
-        
-        stackTest.push(aNumber: 12)
-        stackTest.push(aNumber: 24)
-        print(stackTest.toString() ?? "3")
-        print(stackTest.pop() ?? 85)
-        print(stackTest.toString() ?? "4")
-        stackTest.push(aNumber: 34)
-        stackTest.push(aNumber: 42)
-        stackTest.push(aNumber: 51)
-        var result : NSNumber? = stackTest.getElementWith(aShift: 0)
-        print(stackTest.toString() ?? "5")
-        print("décalage de 0 : \(result!)")
-        result = stackTest.getElementWith(aShift: 2)
-        print(stackTest.toString() ?? "6")
-        print("décalage de 2 : \(result!)")
-    
     }
 
     func testPerformanceExample() throws {
