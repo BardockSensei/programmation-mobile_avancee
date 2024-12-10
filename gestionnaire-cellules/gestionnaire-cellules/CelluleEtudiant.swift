@@ -23,10 +23,20 @@ class CelluleEtudiant: UITableViewCell
     
     func miseAjourCellule(etudiant: Etudiant) {
         print(etudiant)
-        let img :UIImage? = UIImage.init(imageLiteralResourceName: etudiant.nomPhoto)
-        imagePhoto = UIImageView.init(image: img)
+        imagePhoto.image = UIImage(named: etudiant.nomPhoto)
         nom.text = etudiant.nom
         prenom.text = etudiant.prenom
         formation.text = etudiant.formation
+        groupeTP.text = etudiant.groupeTP
+        nbAbsences.text = "Nb Absences : \(etudiant.nbAbsences)"
+        
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
     }
 }

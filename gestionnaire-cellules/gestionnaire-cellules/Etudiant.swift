@@ -21,5 +21,4 @@ class Etudiant: NSObject {
         self.formation = formation
         self.groupeTP = groupeTP
     }
-    
 }

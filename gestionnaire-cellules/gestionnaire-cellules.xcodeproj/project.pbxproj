@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A70134A2CDA67A80009A47C /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7013482CDA67A80009A47C /* ODRefreshControl.m */; };
 		5AC85D662CBEA2C400C88486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC85D652CBEA2C400C88486 /* AppDelegate.swift */; };
 		5AC85D682CBEA2C400C88486 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC85D672CBEA2C400C88486 /* SceneDelegate.swift */; };
 		5AC85D6A2CBEA2C400C88486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC85D692CBEA2C400C88486 /* ViewController.swift */; };
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A7013472CDA67A80009A47C /* gestionnaire-cellules-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gestionnaire-cellules-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A7013482CDA67A80009A47C /* ODRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
+		5A7013492CDA67A80009A47C /* ODRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
 		5AC85D622CBEA2C400C88486 /* gestionnaire-cellules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gestionnaire-cellules.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC85D652CBEA2C400C88486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AC85D672CBEA2C400C88486 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,11 +111,14 @@
 				5AC85D672CBEA2C400C88486 /* SceneDelegate.swift */,
 				5AC85D692CBEA2C400C88486 /* ViewController.swift */,
 				5AC85D6B2CBEA2C400C88486 /* Main.storyboard */,
+				5A7013492CDA67A80009A47C /* ODRefreshControl.h */,
+				5A7013482CDA67A80009A47C /* ODRefreshControl.m */,
 				5AC85D6E2CBEA2C500C88486 /* Assets.xcassets */,
 				5AC85D702CBEA2C500C88486 /* LaunchScreen.storyboard */,
 				5AC85D732CBEA2C500C88486 /* Info.plist */,
 				5AC85D952CBEA33E00C88486 /* Etudiant.swift */,
 				5AC85D972CBEA5CD00C88486 /* CelluleEtudiant.swift */,
+				5A7013472CDA67A80009A47C /* gestionnaire-cellules-Bridging-Header.h */,
 			);
 			path = "gestionnaire-cellules";
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 				TargetAttributes = {
 					5AC85D612CBEA2C400C88486 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					5AC85D772CBEA2C500C88486 = {
 						CreatedOnToolsVersion = 15.4;
@@ -268,6 +276,7 @@
 				5AC85D662CBEA2C400C88486 /* AppDelegate.swift in Sources */,
 				5AC85D982CBEA5CD00C88486 /* CelluleEtudiant.swift in Sources */,
 				5AC85D682CBEA2C400C88486 /* SceneDelegate.swift in Sources */,
+				5A70134A2CDA67A80009A47C /* ODRefreshControl.m in Sources */,
 				5AC85D962CBEA33E00C88486 /* Etudiant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3FZAFPQ65P;
@@ -466,6 +476,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tp4.gestionnaire-cellules";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "gestionnaire-cellules/gestionnaire-cellules-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -476,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3FZAFPQ65P;
@@ -494,6 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tp4.gestionnaire-cellules";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "gestionnaire-cellules/gestionnaire-cellules-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

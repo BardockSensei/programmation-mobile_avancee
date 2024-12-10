@@ -14,16 +14,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var maTableView: UITableView!
     
     func creerTableauEtudiant() {
-        for i in 0...5 {
-            var etudiant :Etudiant = Etudiant(nom: "Hostache", prenom: "Guillaume", formation: "M2 CIM", groupeTP: "DT")
-            
-            monTabEtudiant.append(etudiant)
-        }
+        monTabEtudiant.append(Etudiant(nom: "Hostache", prenom: "Guillaume", formation: "M2 CIM", groupeTP: "DT"))
+        monTabEtudiant.append(Etudiant(nom: "Pedro", prenom: "Sancho", formation: "M1 Info", groupeTP: "2"))
+        monTabEtudiant.append(Etudiant(nom: "Hostache", prenom: "Guillaume", formation: "M2 CIM", groupeTP: "DA"))
+        monTabEtudiant.append(Etudiant(nom: "Pedro", prenom: "Sancho", formation: "M1 Info", groupeTP: "3"))
+        monTabEtudiant.append(Etudiant(nom: "Hostache", prenom: "Guillaume", formation: "M2 CIM", groupeTP: "DT"))
+        monTabEtudiant.append(Etudiant(nom: "Pedro", prenom: "Sancho", formation: "M1 Info", groupeTP: "2"))
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         creerTableauEtudiant()
+        maTableView.delegate = self
+        maTableView.dataSource = self
+        maTableView.rowHeight = 200 // hauteur des cellules
+        //loadingAnim = ODRefreshControl(in: maTableView)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,8 +37,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // return a cell for each row
-        let aCell = tableView.dequeueReusableCell(withIdentifier: "idCelluleEtudiant", for: indexPath) as! CelluleEtudiant
-        return aCell
-        
+        let aCellule = maTableView.dequeueReusableCell(withIdentifier: "idCelluleEtudiant", for: indexPath) as! CelluleEtudiant
+        aCellule.miseAjourCellule(etudiant: monTabEtudiant[indexPath.row])
+        if (indexPath.row % 2 == 0) {
+            aCellule.backgroundColor = .blue
+        } else {
+            aCellule.backgroundColor = .yellow
+        }
+        return aCellule
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        maTableView.reloadData()
+    }
+    
+    
 }
